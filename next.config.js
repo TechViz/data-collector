@@ -2,7 +2,6 @@ const ImageminWebpWebpackPlugin = require(`imagemin-webp-webpack-plugin`);
 
 function buildEnv() {
 	const envVariable = (process.env['ENV'] || process.env['env'] || '').trim().toLowerCase();
-	console.log(`Reading Env as "${envVariable}"`);
 
 	if (envVariable === 'prod' || envVariable === 'production') {
 		return { backendURL: 'https://h7dx30hf75.execute-api.us-east-1.amazonaws.com/prod' };
