@@ -108,18 +108,18 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Formulário - Mônada Analytics</title>
+				<title>Formulário - Tech Viz</title>
 				<link rel="canonical" href={deployedURLHome} />
 			</Head>
 			<Root>
-				<Navbar title="Mônada Analytics" />
+				<Navbar title="Tech Viz" />
 				<Sidemenu />
 				<Main>
 					<LeftSide>
 						<LogoWithWhiteBackground />
 					</LeftSide>
 					<RightSide>
-						<Title>Olá, somos a equipe Mônada!</Title>
+						<Title>Olá, somos a equipe Tech Viz!</Title>
 						<Bubble>
 							<strong>Estamos aqui para realizar uma pesquisa.</strong>
 							<br />

@@ -51,7 +51,7 @@ const HabitationPage: FC<{}> = ({}) => {
 					bgColor: theme => theme.colors.blue.main,
 					title: (
 						<>
-							Mônada Analytics / <strong>Lar doce lar</strong>
+							Tech Viz / <strong>Lar doce lar</strong>
 						</>
 					),
 				},

@@ -1,8 +1,8 @@
-# Monada Analytics
+# Tech Viz
 
-This repository containing the code for the _Mônada Analytics_'s frontend
+This repository containing the code for the _Tech Viz Data Collector_'s frontend
 
-A link to the production software can be found [here](http://analytics.monada.tech/).
+A link to the production software can be found [here](http://techviz.me/).
 
 ## What technologies does this use?
 

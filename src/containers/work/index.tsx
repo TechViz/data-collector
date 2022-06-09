@@ -43,7 +43,7 @@ const WorkPage: FC<{}> = ({}) => {
 					bgColor: theme => theme.colors.blue.main,
 					title: (
 						<>
-							Mônada Analytics / <strong>Trabalho</strong>
+							Tech Viz / <strong>Trabalho</strong>
 						</>
 					),
 				},

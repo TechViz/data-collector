@@ -70,7 +70,7 @@ export default function Home() {
 	return (
 		<>
 			<Root>
-				<Navbar title="Mônada Analytics" />
+				<Navbar title="Tech Viz" />
 				<Sidemenu />
 				<Main>
 					<LeftSide>

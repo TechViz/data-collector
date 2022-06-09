@@ -25,7 +25,7 @@ const FirstStepsPage: FC<{}> = ({}) => {
 					bgColor: theme => theme.colors.blue.main,
 					title: (
 						<>
-							Mônada Analytics / <strong>Primeiros Passos</strong>
+							Tech Viz / <strong>Primeiros Passos</strong>
 						</>
 					),
 				},

@@ -47,7 +47,7 @@ const FinancesPage: FC<{}> = ({}) => {
 					bgColor: theme => theme.colors.blue.main,
 					title: (
 						<>
-							Mônada Analytics / <strong>Finanças</strong>
+							Tech Viz / <strong>Finanças</strong>
 						</>
 					),
 				},

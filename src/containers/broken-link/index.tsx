@@ -42,7 +42,7 @@ const Thanks: FC<{}> = () => {
 					<br />
 					<span style={{ fontSize: 20 }}>
 						Caso você não tenho recebido, escreva pra gente através do{' '}
-						<strong>contato@monada.tech</strong> que enviaremos seu link novamente.
+						<strong>contato@techviz.me</strong> que enviaremos seu link novamente.
 					</span>
 				</Text>
 			</CardPageTemplate>

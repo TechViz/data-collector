@@ -51,7 +51,7 @@ const AboutYouPage: FC<{}> = ({}) => {
 					bgColor: theme => theme.colors.blue.main,
 					title: (
 						<>
-							Mônada Analytics / <strong>Sobre Você</strong>
+							Tech Viz / <strong>Sobre Você</strong>
 						</>
 					),
 				},

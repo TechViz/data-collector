@@ -5,7 +5,7 @@
 module.exports = {
 	apps: [
 		{
-			name: 'Mônada MVP',
+			name: 'Tech Viz Data Collector',
 
 			// The serve script will simply serve the contents of the folder specified in the.
 			// arguments

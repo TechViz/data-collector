@@ -38,13 +38,13 @@ const MyApp: MyAppComponent = ({ Component, pageProps }) => {
 				<meta name="msapplication-config" content="/favicon/browserconfig.xml" />
 				<meta name="theme-color" content="#ffffff" />
 
-				<meta name="description" content="Software Mônada Analytics" />
+				<meta name="description" content="Software Tech Viz" />
 
 				{/* These meta tags are related to OpenGraph, which allows for better webpage cards. */}
 				{/* TODO - put real content here */}
-				<meta property="og:title" content="Mônada Analytics" />
-				<meta property="og:site_name" content="Mônada Analytics" />
-				<meta property="og:description" content="Software de Analytics da Mônada" />
+				<meta property="og:title" content="Tech Viz" />
+				<meta property="og:site_name" content="Tech Viz" />
+				<meta property="og:description" content="Software de Analytics da Tech Viz" />
 				<meta property="og:locale" content={supportedLanguages[0].replace(/-/g, '_')} />
 				{supportedLanguages.slice(1).map(language => (
 					<meta property="og:locale:alternate" content={language.replace(/-/g, '_')} />

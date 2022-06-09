@@ -44,7 +44,7 @@ const ProblematizationPage: FC<{}> = ({}) => {
 					bgColor: theme => theme.colors.blue.main,
 					title: (
 						<>
-							Mônada Analytics / <strong>Argumentação</strong>
+							Tech Viz / <strong>Argumentação</strong>
 						</>
 					),
 				},

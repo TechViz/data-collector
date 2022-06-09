@@ -27,8 +27,8 @@ const LoginDone: FC<{}> = ({}) => {
 		>
 			<Title>Estamos muito felizes em te receber aqui!</Title>
 			<Text>
-				À partir de agora você está em um ambiente controlado exclusivamente por nós, a equipe
-				Mônada.
+				À partir de agora você está em um ambiente controlado exclusivamente por nós, a equipe Tech
+				Viz.
 			</Text>
 		</CardPageTemplate>
 	);

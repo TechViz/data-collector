@@ -68,11 +68,7 @@ const BaseImage = React.forwardRef<HTMLPictureElement, BaseImageProps>(
 const Images = {
 	logo: styled(BaseImage).attrs(({ alt }) => ({
 		imageData: ImageURLs.logo,
-		alt: alt || `Logo Mônada`,
-	}))``,
-	logoWithWhiteBackground: styled(BaseImage).attrs(({ alt }) => ({
-		imageData: ImageURLs.logo,
-		alt: alt || `Logo Mônada Analytics`,
+		alt: alt || `Logo Tech Viz`,
 	}))``,
 	icons: {
 		info: styled(BaseImage).attrs(({ alt }) => ({

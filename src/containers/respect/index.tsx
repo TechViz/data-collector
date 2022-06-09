@@ -38,7 +38,7 @@ const DialogPage: FC<{}> = ({}) => {
 					bgColor: theme => theme.colors.blue.main,
 					title: (
 						<>
-							Mônada Analytics / <strong>Respeito</strong>
+							Tech Viz / <strong>Respeito</strong>
 						</>
 					),
 				},

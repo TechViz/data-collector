@@ -84,7 +84,7 @@ const Feedback: FC<{}> = ({}) => {
 		<QuestionPageTemplate
 			title={
 				<>
-					Mônada Analytics / <strong>Avaliação</strong>
+					Tech Viz / <strong>Avaliação</strong>
 				</>
 			}
 			backgroundColor={theme => theme.colors.primary.main}
@@ -97,7 +97,7 @@ const Feedback: FC<{}> = ({}) => {
 				onSubmit={handleSubmit}
 				actionButtonBorderColor={theme => theme.colors.white.full}
 			>
-				<Text>Como você avalia sua experiência com a plataforma Mônada Analytics?</Text>
+				<Text>Como você avalia sua experiência com a plataforma Tech Viz?</Text>
 				<FeedbackContainer>
 					<StarContainer>{createStarComponents()}</StarContainer>
 					<FeedbackText>{feedbackText}</FeedbackText>
