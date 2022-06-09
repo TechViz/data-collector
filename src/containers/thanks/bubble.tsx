@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, PropsWithChildren } from 'react';
 import styled, { useTheme } from 'styled-components';
 
 import Text from '../../components/styling/text';
@@ -23,9 +23,7 @@ const PaddleSvg = styled.svg`
 	transform: translate(-50%, 0);
 `;
 
-type BubbleComponent = FC<{}>;
-
-const Bubble: BubbleComponent = ({ children }) => {
+const Bubble: FC<PropsWithChildren<{}>> = ({ children }) => {
 	const theme = useTheme();
 
 	return (

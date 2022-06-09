@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, PropsWithChildren } from 'react';
 import styled, { DefaultTheme } from 'styled-components';
 import Navbar from '../../layout/navbar';
 import Sidemenu from '../../layout/sidemenu';
@@ -32,11 +32,9 @@ const ContentContainer = styled.div`
 	align-items: center;
 `;
 
-const QuestionPageTemplate: FC<{ title: React.ReactNode; backgroundColor?: ColorDescriptor }> = ({
-	children,
-	title,
-	backgroundColor = theme => theme.colors.blue.main,
-}) => {
+const QuestionPageTemplate: FC<
+	PropsWithChildren<{ title: React.ReactNode; backgroundColor?: ColorDescriptor }>
+> = ({ children, title, backgroundColor = theme => theme.colors.blue.main }) => {
 	return (
 		<Root backgroundColor={backgroundColor}>
 			<Navbar showCloseButton title={title} />

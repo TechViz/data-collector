@@ -10,7 +10,7 @@ const context = React.createContext<ProgressBarContext>(null as unknown as Progr
 const ProgressBarProvider = ({ ...props }) => {
 	const [progress, rawSetProgress] = React.useState<number>(0);
 
-	const setProgress = React.useCallback(newProgress => {
+	const setProgress = React.useCallback((newProgress: number) => {
 		let progress = Math.max(Math.min(newProgress, 100), 0);
 		rawSetProgress(progress);
 	}, []);

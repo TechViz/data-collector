@@ -1,19 +1,15 @@
-import React, { FC } from 'react';
+import React, { FC, PropsWithChildren } from 'react';
 import MultistepProvider from './context';
 import PageRenderer from './page-renderer';
 
-const MultistepForm: FC<{
-	pages: React.ReactNode[];
-	writeHashToURL?: boolean;
-	onForwardAtLastPage?: () => void;
-	onChangePage?: (newPage: number) => void;
-}> = ({
-	pages,
-	onChangePage = () => {},
-	writeHashToURL = false,
-	onForwardAtLastPage,
-	children,
-}) => {
+const MultistepForm: FC<
+	PropsWithChildren<{
+		pages: React.ReactNode[];
+		writeHashToURL?: boolean;
+		onForwardAtLastPage?: () => void;
+		onChangePage?: (newPage: number) => void;
+	}>
+> = ({ pages, onChangePage = () => {}, writeHashToURL = false, onForwardAtLastPage, children }) => {
 	return (
 		<MultistepProvider
 			onChangePage={onChangePage}

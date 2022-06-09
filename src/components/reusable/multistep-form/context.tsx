@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, PropsWithChildren } from 'react';
 import { getHashMarker, writeHashMarker } from '../../../libs/hash';
 import { useEffectUpdate } from '../../../libs/hooks/use-effect-update';
 
@@ -14,12 +14,14 @@ type MultistepContext = {
 
 const context = React.createContext<MultistepContext>(null as unknown as MultistepContext);
 
-const MultistepProvider: FC<{
-	maxStage: number;
-	writeHashToURL: boolean;
-	onChangePage: (newPage: number) => void;
-	onForwardAtLastPage?: () => void;
-}> = ({ maxStage, writeHashToURL, onChangePage, onForwardAtLastPage = () => {}, ...props }) => {
+const MultistepProvider: FC<
+	PropsWithChildren<{
+		maxStage: number;
+		writeHashToURL: boolean;
+		onChangePage: (newPage: number) => void;
+		onForwardAtLastPage?: () => void;
+	}>
+> = ({ maxStage, writeHashToURL, onChangePage, onForwardAtLastPage = () => {}, ...props }) => {
 	const [formValue, setFormValue] = React.useState<Object>({});
 	const [stage, rawSetStage] = React.useState<number>(0);
 

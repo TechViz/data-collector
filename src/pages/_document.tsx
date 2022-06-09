@@ -41,13 +41,11 @@ export default class MyDocument extends Document {
 			const extraCSS = getExtraCSS();
 			return {
 				...initialProps,
-				styles: (
-					<>
-						<style dangerouslySetInnerHTML={{ __html: extraCSS }} />
-						{initialProps.styles}
-						{sheet.getStyleElement()}
-					</>
-				),
+				styles: [
+					<style dangerouslySetInnerHTML={{ __html: extraCSS }} />,
+					initialProps.styles,
+					sheet.getStyleElement(),
+				],
 			};
 		} finally {
 			sheet.seal();

@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, PropsWithChildren } from 'react';
 import styled from 'styled-components';
 import { useSidemenuOpen } from '../../../contexts/sidemenu-open';
 import CloseButton from '../../reusable/close-button';
@@ -41,9 +41,7 @@ const TopContainer = styled.div`
 	padding: 16px;
 `;
 
-type ShowHideComponent = FC<{}>;
-
-const ShowHide: ShowHideComponent = ({ children }) => {
+const ShowHide: FC<PropsWithChildren<{}>> = ({ children }) => {
 	const { isSidemenuOpen, closeSidemenu } = useSidemenuOpen();
 
 	function handleClose() {

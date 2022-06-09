@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, PropsWithChildren } from 'react';
 import styled, { useTheme } from 'styled-components';
 import { useProgressBar } from '../../../contexts/progress-bar';
 import { useSubmissionState } from '../../../contexts/submission-state';
@@ -47,17 +47,19 @@ const ProgressText = styled.p`
 	width: 100%;
 `;
 
-const CardPageTemplate: FC<{
-	showBackArrow?: boolean;
-	actionText?: string;
-	actionDisabled?: boolean;
-	actionLoading?: boolean;
-	onSubmit?: (formElem: HTMLFormElement) => void;
-	onBack?: () => void;
-	showProgressBar?: boolean;
-	actionButtonBorderColor?: ColorDescriptor;
-	maxWidth?: number;
-}> = ({
+const CardPageTemplate: FC<
+	PropsWithChildren<{
+		showBackArrow?: boolean;
+		actionText?: string;
+		actionDisabled?: boolean;
+		actionLoading?: boolean;
+		onSubmit?: (formElem: HTMLFormElement) => void;
+		onBack?: () => void;
+		showProgressBar?: boolean;
+		actionButtonBorderColor?: ColorDescriptor;
+		maxWidth?: number;
+	}>
+> = ({
 	children,
 	showBackArrow,
 	maxWidth,
@@ -153,7 +155,7 @@ const BackArrow: FC<{ show?: boolean; onClick?: () => void; tabIndex: number }> 
 	);
 };
 
-const BackArrowSubstitute: FC<{}> = ({ children }) => {
+const BackArrowSubstitute: FC<PropsWithChildren<{}>> = ({ children }) => {
 	return (
 		<Top>
 			<div style={{ width: 69, height: 69 }}>{children}</div>

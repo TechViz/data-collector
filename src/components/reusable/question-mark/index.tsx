@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC, PropsWithChildren } from 'react';
 import styled from 'styled-components';
 
 const Root = styled.div`
@@ -44,11 +44,7 @@ const Tooltip = styled.div`
 	}
 `;
 
-type QuestionMarkProps = React.PropsWithoutRef<{}>;
-
-type QuestionMarkComponent = React.FunctionComponent<QuestionMarkProps>;
-
-const QuestionMark: QuestionMarkComponent = ({ children }) => {
+const QuestionMark: FC<PropsWithChildren<{}>> = ({ children }) => {
 	const tooltipRef = React.useRef<HTMLDivElement | null>(null);
 
 	async function updateTooltipPosition() {
