@@ -5,5 +5,19 @@
 [[plugins]]
 package = "@netlify/plugin-nextjs"
 
+[build]
+command = "echo \"Env is $env\" && npm run build-export"
+publish = "out/"
+
+[context.production.environment]
+env = "production"
+
+[context.branch-deploy.environment]
+env = "development"
+
+[context.deploy-preview.environment]
+env = "development"
+
+
 [build.environment]
 NETLIFY_NEXT_PLUGIN_SKIP = "true"
