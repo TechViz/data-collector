@@ -64,6 +64,12 @@ const Title = styled.h1`
 	margin: 0;
 `;
 
+const LogoWithWhiteBackground = styled(Images.logo)`
+	background-color: white;
+	height: max-content;
+	padding: 12px;
+`;
+
 export default function Home() {
 	const router = useRouter();
 
@@ -74,7 +80,7 @@ export default function Home() {
 				<Sidemenu />
 				<Main>
 					<LeftSide>
-						<Images.logoWithWhiteBackground />
+						<LogoWithWhiteBackground />
 					</LeftSide>
 					<RightSide>
 						<Bubble>
